@@ -3,13 +3,86 @@
     padding: 0;
     box-sizing: border-box;
 }
-center{
-    background-color: teal;
-    height: 100%;
-    width: 100%;
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:100px;
+    background-color: rgb(240, 236, 236);
 }
-center h1{
-    font-size: 50px;
-    font-weight: 500;
+.left{
+    width: 50%;
+    align-content: center;
+}
+.heading{
+    font-size: 120px;
+    color: rgba(49, 49, 235, 0.863) ;
+    font-weight: bolder;
+}
+.subhead{
+    font-size: 20px;
+    color: black;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.rightform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border:none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 25px;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgb(151, 150, 150);
+}
+#email,#password{
+    padding: 20px;
+    width: 300px;
+    border: 1px solid rgb(194, 192, 192);
+    outline: none;
+    border-radius: 5px;
+}
+#password::placeholder,#email::placeholder{
+    font-size: 15px;
+    color: rgba(112, 111, 111, 0.705);
+}
+.login{
+    width: 100%;
+    background-color: rgba(49, 49, 235, 0.863);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     color: white;
+    font-size:15px ;
+    font-weight: bold;
+}
+.forget{
+    color: rgb(106, 106, 231);
+}
+hr{
+    color:rgba(112, 111, 111, 0.705) ;
+    display: block;
+}
+.create{
+    width: auto;
+    background-color: rgb(33, 153, 33);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size:15px ;
+    font-weight: bold;
+}
+.downsub{
+    margin-top: 50px;
+    color:  rgb(112, 111, 111);
+}
+.downsub b{
+    color: black;
 }
